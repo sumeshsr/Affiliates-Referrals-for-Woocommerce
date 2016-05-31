@@ -104,7 +104,7 @@ class Affiliates_Referrals_Woocommerce_Integration {
 	
 	public static function affiliates_admin_menu() {
 		
-		$page = add_menu_page ( 'Affiliates Referrals Woocommerce Integration', 'Referrals', AFFILIATES_ADMINISTER_OPTIONS, 'aff-admin-referrals-wc-integration', array( __CLASS__, 'aff_wc_admin_integration' ) , plugins_url( 'affiliates-referrals-woocommerce-integration/assets/images/icon.png' )  , 36  );
+		$page = add_menu_page ( 'Affiliates Referrals Woocommerce Integration', 'Referrals', AFFILIATES_ADMINISTER_OPTIONS, 'aff-admin-referrals-wc-integration', array( __CLASS__, 'aff_wc_admin_integration' ) , plugins_url( 'affiliates-referrals-for-woocommerce/assets/images/icon.png' )  , 36  );
 		
 		$pages[] = $page;
 		add_action( 'admin_print_styles-' . $page, 'affiliates_admin_print_styles' );
